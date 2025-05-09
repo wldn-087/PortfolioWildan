@@ -1,3 +1,10 @@
+:root{
+    --gradient : linear-gradient(to right, #fffef7, #b2b9ff);
+}
+
 body{
-    background: linear-gradient(to right,  #fffef7, #ffc79d);
+    background: var(--gradient)
+}
+.bg-gradient{
+    background: var(--gradient)
 }
