@@ -10,17 +10,29 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             AOS.init({
                 duration: 1500,
-                once: true, // whether animation should happen only once - while scrolling down
-                mirror: false // whether elements should animate out while scrolling past them
+                once: true
             });
         });
     </script>
+    <style>
+        :root{
+        --gradient : linear-gradient(to right, #dff5fd, #b2b9ff);
+        }
+
+        body{
+            background: var(--gradient)
+        }
+        .background-gradient{
+            background: var(--gradient)
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -154,28 +166,28 @@
         </div>
     </section>
 
-    <section id="about" class="py-5 d-flex align-items-center">
+    <section id="about" class="py-5 d-flex align-items-center vh-100">
     <div class="container">
         <div class="row align-items-center">
         <!-- About Text -->
-        <div class="col-md-6 mb-4" data-aos="fade-right">
-            <h2 class="mb-4">About Me</h2>
-            <p>Hello! My name is <strong>Moch. Wildan Fahmi</strong>, a student from <strong>Nganjuk, East Java, Indonesia</strong>. I am 17 years old and have been exploring creative design and development for about 2 years.</p>
-            <p>I use tools like <strong>Blender</strong>, <strong>Unity</strong>, <strong>Photoshop</strong>, <strong>Corel Draw</strong>, and <strong>VS Code</strong> to create digital artworks, 3D models, and interactive projects.</p>
-            <p>I’m always excited to take on new challenges and collaborate on interesting projects. Let’s connect and create something great!</p>
+        <div class="col-md-6 mb-4">
+            <h2 class="mb-4" data-aos="fade-right">About Me</h2>
+            <p data-aos="fade-right" data-aos-delay="75">Hello! My name is <strong>Moch. Wildan Fahmi</strong>, a student from <strong>Nganjuk, East Java, Indonesia</strong>. I am 17 years old and have been exploring creative design and development for about 2 years.</p>
+            <p data-aos="fade-right" data-aos-delay="150">I use tools like <strong>Blender</strong>, <strong>Unity</strong>, <strong>Photoshop</strong>, <strong>Corel Draw</strong>, and <strong>VS Code</strong> to create digital artworks, 3D models, and interactive projects.</p>
+            <p data-aos="fade-right" data-aos-delay="225">I’m always excited to take on new challenges and collaborate on interesting projects. Let’s connect and create something great!</p>
+
+            <!-- Education -->
+            <h3 class="mb-3" data-aos="fade-left">Education</h3>
+            <ul class="list-unstyled">
+                <li class="mb-2" data-aos="fade-left" data-aos-delay="75"><strong>SMK Negeri 1 Nganjuk</strong> (2023 - Now)</li>
+                <li class="mb-2" data-aos="fade-left" data-aos-delay="150"><strong>MTS Negeri 7 Nganjuk</strong> (2019 - 2023)</li>
+            </ul>
         </div>
 
-        <!-- Education & Skills -->
-        <div class="col-md-6" data-aos="fade-left">
-            <!-- Education -->
-            <h3 class="mb-3">Education</h3>
-            <ul class="list-unstyled">
-            <li class="mb-2"><strong>SMK Negeri 1 Nganjuk</strong> (2023 - Now)</li>
-            <li><strong>MTS Negeri 7 Nganjuk</strong> (2019 - 2023)</li>
-            </ul>
-
+        <!--Skills -->
+        <div class="col-md-6">
             <!-- Skills -->
-            <h3 class="mt-4 mb-3">Skills</h3>
+            <h3 class="mt-4 mb-3" data-aos="fade-right">Skills</h3>
             <!-- Skill item -->
             <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
                 <small>Front End Web Development</small>
@@ -248,9 +260,9 @@
                     transition: transform 0.2s ease;
                 }
             </style>
-            <h4 class="text-center">3D Model</h4>
+            <h4 class="text-center" data-aos="fade-up" data-aos-duration="800">3D Model</h4>
             <div class="row justify-content-center g-4">
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a data-title="Lone Chair" data-bs-toggle="modal" data-bs-target="#lone-chair" style="text-decoration: none; color: #000;">
                             <img src="/3D model/Icon/Lone Chair.png" class="card-img-top img-fluid rounded-2" alt="Lone Chair">
@@ -261,7 +273,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a data-title="Magnifying Glass" data-bs-toggle="modal" data-bs-target="#magnifying-glass" style="text-decoration: none; color: #000;">
                             <img src="/3D model/Icon/Magnifying Glass.png" class="card-img-top img-fluid rounded-2" alt="Magnifying Glass">
@@ -272,7 +284,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a data-title="Water Faucet" data-bs-toggle="modal" data-bs-target="#water-faucet" style="text-decoration: none; color: #000;">
                             <img src="/3D model/Icon/Water Faucet.png" class="card-img-top img-fluid rounded-2" alt="Water Faucet">
@@ -283,7 +295,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a href="https://picsum.photos/200/150?random=4" data-lightbox="portfolio" data-title="Project 4">
                             <img src="https://picsum.photos/200/150?random=4" class="card-img-top img-fluid rounded-2" alt="Project 4">
@@ -294,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a href="https://picsum.photos/200/150?random=5" data-lightbox="portfolio" data-title="Project 5">
                             <img src="https://picsum.photos/200/150?random=5" class="card-img-top img-fluid rounded-2" alt="Project 5">
@@ -306,9 +318,9 @@
                     </div>
                 </div>
             </div>
-            <h4 class="text-center">Games</h4>
+            <h4 class="text-center" data-aos="fade-up" data-aos-duration="800">Games</h4>
             <div class="row justify-content-center g-4">
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a href="https://gd.games/wildan_fahmi/forest" target="_blank" style="text-decoration: none; color: #000;">
                             <img src="/Games/Forest.png" class="card-img-top img-fluid rounded-2" alt="Game 1">
@@ -319,7 +331,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a href="https://gd.games/wildan_fahmi/gate-keeper" target="_blank" style="text-decoration: none; color: #000;">
                             <img src="/Games/Gate Keeper.png" class="card-img-top img-fluid rounded-2" alt="Game 2">
@@ -330,7 +342,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4" data-aos="zoom-in"data-aos-delay="300" data-aos-duration="750">
                     <div class="card border-0" style="background-color: transparent;">
                         <a href="https://gd.games/wildan_fahmi/save-the-alien" target="_blank" style="text-decoration: none; color: #000;">
                             <img src="/Games/Save the Aliens.png" class="card-img-top img-fluid rounded-2" alt="Game 3">
@@ -404,44 +416,44 @@
 
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Me</h2>
+            <h2 class="text-center mb-4" data-aos="fade-up">Contact Me</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6" data-aos="fade-right">
-                    <h4>Contact Information</h4>
-                    <div class="d-flex flex-column align-items-center mt-4">
+                    <h4 data-aos="fade-right" data-aos-delay="100">Contact Information</h4>
+                    <div class="mt-4">
                         <h5 class="mb-3"></h5>
-                        <ul class="list-unstyled text-center">
-                            <li class="mb-4">
+                        <div style="padding: 20px">
+                            <div class="mb-4" data-aos="fade-right" data-aos-delay="200">
                                 <i class="fas fa-envelope me-3" style="font-size: 1.5rem;"></i>
                                 <a href="mailto:wildanfahmi087@gmail.com" style="text-decoration: none; color: black; font-size: 1.2rem;">wildanfahmi087@gmail.com</a>
-                            </li>
-                            <li class="mb-4">
+                            </div>
+                            <div class="mb-4" data-aos="fade-right" data-aos-delay="300">
                                 <i class="fab fa-whatsapp me-3" style="font-size: 1.5rem;"></i>
                                 <a href="https://wa.me/6282132343428" target="_blank" style="text-decoration: none; color: black; font-size: 1.2rem;">+62 821-3234-3428</a>
-                            </li>
-                            <li class="mb-4">
+                            </div>
+                            <div class="mb-4" data-aos="fade-right" data-aos-delay="400">
                                 <i class="fas fa-map-marker-alt me-3" style="font-size: 1.5rem;"></i>
                                 <span style="font-size: 1.2rem;">Nganjuk, East Java, Indonesia</span>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h4>Send a Message</h4>
+                <div class="col-md-6">
+                    <h4 data-aos="fade-left" data-aos-delay="100">Send a Message</h4>
                     <form action="https://formspree.io/f/xyzwdzaw" method="POST">
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-left" data-aos-delay="200">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-left" data-aos-delay="300">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-left" data-aos-delay="400">
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="border-radius: 25px; width: 75px;">Send</button>
+                        <button type="submit" class="btn btn-primary" style="border-radius: 25px; width: 75px;" data-aos="fade-left" data-aos-delay="500">Send</button>
                     </form>
                 </div>
             </div>
